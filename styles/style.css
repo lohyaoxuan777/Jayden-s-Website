@@ -27,6 +27,6 @@ body, html {
     background: #202020;
 }
 
-.container buttom:active {
+.container button:active {
     transform: scale(0.9);
 }
