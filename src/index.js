@@ -2,6 +2,8 @@ let button = document.querySelector(".button");
 let score = document.querySelector("p");
 
 let autoClickerBtn = document.querySelector(".auto-clicker");
+let autoClickerQuantityHTML = document.querySelector("span.quantity-auto-clicker");
+let autoClickerQuantity = 0;
 
 score.textContent = 0;
 score.style.display = "none";
@@ -18,18 +20,16 @@ button.addEventListener("click", () => {
 
         autoClickerBtn.style.setProperty("transition", "0.3s");         
         autoClickerBtn.classList.add("button-hover-cmp", "button-active-cmp");
-
-        
     };
 });
 
 autoClickerBtn.addEventListener("click", () => {
     if (score.textContent >= 10) {
         score.textContent = Number(score.textContent) - 10;
-        let interval = setInterval(() => {
+        setInterval(() => {
             score.textContent = Number(score.textContent) + 1;
         }, 3000);
-
-        interval();
+        autoClickerQuantity++;
+        autoClickerQuantityHTML.textContent = `x${autoClickerQuantity}`;
     };
 });
