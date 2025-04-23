@@ -1,9 +1,11 @@
 .button-hover-cmp:hover {
-    background: #070707 !important;
+    background: #000000 !important;
 }
 
 .button-active-cmp:active {
     transform: scale(0.9) !important;
+    transition-timing-function: cubic-bezier(0, 0.69, 0.85, 0.73);
+    transition-duration: 700ms !important;
 }
 
 body, html {
@@ -11,7 +13,7 @@ body, html {
     background: linear-gradient(45deg, #5900ff, #360099);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #fff;
+    color: #ffffff;
 }
 
 .container {
@@ -25,8 +27,8 @@ body, html {
     padding: 15px 20px;
     border: transparent;
     border-radius: 15px;
-    background: #000;
-    color: #fff;
+    background: #000000;
+    color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -41,7 +43,7 @@ body, html {
 
 .powers-container button {
     cursor: no-drop;
-    background: #202020;
+    background: #333333;
     position: relative;
     display: inline-block;
     font-size: 1em;
@@ -53,8 +55,8 @@ body, html {
     bottom: -20%;
     left: 150%;
     transform: translateX(-50%);
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
@@ -67,18 +69,16 @@ body, html {
     opacity: 1;
 }
 
-
-.powers-container button:hover {
-    background: #202020;
-}
-
-.powers-container button:active {
-    transform: scale(1);
-}
-
 .powers-container button p {
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .powers-container button::after {
+        left: 0%;
+        font-size: small;
+    }
 }
