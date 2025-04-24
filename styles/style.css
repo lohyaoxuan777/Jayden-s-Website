@@ -21,6 +21,11 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 100px;
+}
+
+a {
+    color: #add8e6;
 }
 
 .container button {

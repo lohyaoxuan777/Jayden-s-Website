@@ -1,0 +1,36 @@
+.button-hover-cmp:hover {
+    background: #000000 !important;
+}
+
+.button-active-cmp:active {
+    transform: scale(0.9) !important;
+    transition-timing-function: cubic-bezier(0, 0.69, 0.85, 0.73);
+    transition-duration: 700ms !important;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #5900ff, #360099);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.container button {
+    padding: 15px 20px;
+    border: transparent;
+    border-radius: 15px;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
