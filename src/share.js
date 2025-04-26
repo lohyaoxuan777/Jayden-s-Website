@@ -6,5 +6,5 @@ shareToWhatsappBtn.addEventListener("click", () => {
 });
 
 shareToMailBtn.addEventListener("click", () => {
-    window.open("mailto:body=https://myboringwebsite.netlify.app/");
+    window.open("https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&body=https://myboringwebsite.netlify.app/");
 });
